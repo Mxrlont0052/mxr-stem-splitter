@@ -64,7 +64,7 @@ class MXRSeparator:
             )
 
         with open(MEL_CONFIG) as f:
-            self.mel_config = ConfigDict(yaml.safe_load(f))
+            self.mel_config = ConfigDict(yaml.full_load(f))
 
         self.mel_model = get_model_from_config("mel_band_roformer", self.mel_config)
         state = torch.load(str(MEL_CKPT), map_location="cpu")
