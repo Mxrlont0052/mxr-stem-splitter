@@ -20,3 +20,4 @@ librosa
 
 # ─── Modelo Demucs (4 stems) ───────────────────────────────────────────────────
 demucs
+numpy<2.0
