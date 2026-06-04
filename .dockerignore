@@ -1,0 +1,10 @@
+temp_uploads/
+temp_outputs/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.git
+.gitignore
+README.md
+*.ckpt
