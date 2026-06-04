@@ -26,7 +26,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # En producción cambia esto por tu dominio frontend
+    allow_origins=["*", "https://amazing-tulumba-475c4a.netlify.app"],   # En producción cambia esto por tu dominio frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
